@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<title></title>
+	<!--cleans browser css-->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--full screen helper-->
+	<script type="text/javascript" src="js/fullScreen.js"></script>
+	<!--use this file to store your game globals!-->
+	<script type="text/javascript" src="js/globals.js"></script>
+
+	<script type="text/javascript" src="js/phaser.js"></script>
+
+	<script type="text/javascript" src="js/utils.js"></script>
+
+</head>
+<body>
+
+	<!--I recomend loading all your games js here-->
+	<script type="text/javascript" src="js/Preload.js"></script>
+	<script type="text/javascript" src="js/BoardView.js"></script>
+
+	<!--Also, i usually leave the main script at the end, to avoid loading issues-->
+	<script src="js/main.js"></script>
+
+	<!--Game container-->
+	<div><img id = "rotateImg" src="assets/rotate.png" style="display: none;"></div>
+	<div id="phaser-game" style="display:flex;"></div>
+
+</body>
+</html>

@@ -1,0 +1,327 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+
+    /* Patron: https://www.heropatterns.com/*/
+    /* color: white; */
+    background-color: #c0331ae7 !important;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23000000' fill-opacity='0.5'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+
+    height: auto;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.containerr {
+    width: 90%;
+    margin-left: 5%;
+    background: rgb(255, 255, 255);
+    /* background: rgba(0, 0, 0, 0.4); */
+}
+
+/* Superior Blanco */
+.Sup{
+    height: 30px;
+    width: 100%;
+    background: white;
+
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+}
+.Sup h5{
+    margin: 10px 10px;
+}
+.Icons a{
+    margin: 0 5px;
+    color: black;
+}
+
+/* Barra de Navegacion */
+.nav-main {
+    font-size: 17px;
+    display: grid;
+
+    /* Columnas */
+    grid-template-columns: auto auto;
+    /* Filas*/
+    grid-template-rows: 80px;
+    /* Horizontal */
+    justify-content: stretch;
+    /* Vertical */
+    align-content: flex-start;
+    
+    background: black;
+    border-bottom: 1px solid rgb(12, 206, 220);
+
+}
+
+.Logo{
+    margin-left: 50px;
+    width: 80px;
+    height: 80px;
+}
+
+.nav-menu{
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-main ul li{
+    padding: 10px;
+}
+
+.nav-main ul li a:hover{
+    color: rgb(189, 175, 175);
+}
+
+.nav-main ul li a{
+    color: white;
+    padding: 6px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 120%;
+    font-style: normal;
+}
+/* Arma tu Skate */
+.Armar_Skate{
+    background:rgb(120,221,226);
+    text-align: center;
+}
+.Armar_Skate img{
+    height: 400px;
+    
+}
+/* Carrusel */
+.carousel{
+    width: 50%;
+}
+.Carrusel_Skate{
+    text-align: center;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.carousel-inner img{
+    height: 600px;
+    /* width: 100%; */
+}
+
+.btn{
+    /* icono del mouse como si fuera a apretar un boton */
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    /* 10px arriba y abajo \\ 20px a los lados */
+    padding: 10px 20px;
+    background: #262626;
+    color: white;
+    font-size: 15px;
+    border: 1px solid #fff;
+    margin: 10px 0px;
+}
+.btn:hover{
+    opacity: .7;
+}
+
+.showcase h2,
+.showcase p{
+    margin-bottom: 10px;
+}
+
+
+
+/* Tarjetas */
+.news-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.news-cards img{
+    width: 100%;
+    height: 150px;
+}
+
+.news-cards h3{
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.news-cards a{
+    padding: 10px 0px;
+    color: rgb(0, 0, 0);
+    text-transform: none;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* card banner one */
+.card-full{
+
+    background: rgb(0, 0, 0);
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 300px;
+    /* background: url(./img/Seguinos\ en\ Instagram.jpg) no-repeat center/cover; */
+    
+}
+
+.Img1{
+    background: url(../assets/img/Instagram.jpg) no-repeat center/cover;
+
+}
+.Img2{
+    background: url(../assets/img/Facebook.jpg) no-repeat center/cover;
+
+}
+
+/* Social */
+.social{
+    margin: 50px;
+
+}
+
+.social p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a{
+    margin: 0 30px;
+}
+.links a i{
+    font-size: 3rem;
+}
+
+/* footer */
+.footer{
+    background: #2f3640;
+    color: #616161;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+/* .menu-btn{
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    font-size: 1.6rem;
+    display: none;
+} */
+/* @media(max-width: 700px){
+
+    
+    .menu-btn{
+        display: block;
+    }
+    .nav-main ul.nav-menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        height: 100%;
+        padding: 30px;
+        opacity: .9;
+        transform: translateX(-400px);
+        transition: transform .5s ease-in-out;
+    }
+
+    .nav-main ul.nav-menu.show{
+        transform: translateX(-20px);
+        transition: transform .5s ease-in-out;
+    }
+
+    .nav-main ul.nav-menu li{
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .news-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-banner-one .content{
+        width: 80%;
+    }
+
+    .card-banner-two .content{
+        width: 80%;
+    }
+
+}
+
+@media(max-width: 500px){
+    
+    .news-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .news-cards img{
+        height: 270px;
+    }
+
+    .card-banner-one .content,
+    .card-banner-two .content{
+        width: 100%;
+        margin: 10px 5px;
+    }
+
+    .footer-links .footer-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btn{
+        padding: 5px 10px;
+        color: white;
+        font-size: 10px;
+        margin: 0px 0px;
+    }
+    .btn:hover{
+        opacity: .7;
+    }
+
+} */
+
+/* https://www.youtube.com/watch?v=Q2imkhmhOFo&t=4s */
+/* https://www.heropatterns.com/ (Patron de fondo) */
+/* https://fonts.google.com/specimen/Oswald?query=osw (Fuente Letras)*/
+/* https://www.npmjs.com/package/scrollreveal (Efecto de pagina)*/

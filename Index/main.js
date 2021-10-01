@@ -1,3 +1,11 @@
+// Carrusel
+document.addEventListener('DOMContentLoaded', () => {
+    const elementosCarousel = document.querySelectorAll('.carousel');
+    M.Carousel.init(elementosCarousel, {
+        duration: 150
+    });
+});
+// Efecto de Pagina
 ScrollReveal().reveal('.Sup');
 ScrollReveal().reveal('.nav-main');
 ScrollReveal().reveal('.Armar_Skate', {delay: 500});

@@ -49,12 +49,16 @@ ul{
     margin: 10px 10px;
 }
 .Icons a{
-    margin: 0 5px;
+    margin: 0 10px;
     color: black;
+}
+.Icons i{
+    font-size: 25px;
 }
 
 /* Barra de Navegacion */
 .nav-main {
+    height: auto;
     font-size: 17px;
     display: grid;
 
@@ -97,7 +101,7 @@ ul{
     color: white;
     padding: 6px;
     text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 120%;
     font-style: normal;
@@ -107,25 +111,32 @@ ul{
     background:rgb(120,221,226);
     text-align: center;
 }
+.Armar_Skate h3{
+    margin: 0px;
+    padding: 15px;
+}
 .Armar_Skate img{
     height: 400px;
     
 }
 /* Carrusel */
 .carousel{
-    width: 50%;
+    min-height: 500px;
 }
-.Carrusel_Skate{
-    text-align: center;
-
-    display: flex;
-    justify-content:center;
-    align-items: center;
+.carousel h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
-
-.carousel-inner img{
-    height: 600px;
-    /* width: 100%; */
+.carousel .carousel-item{
+    margin: 0;
+    padding: 0;
+    width: 350px;
+}
+.carousel .carousel-item img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .btn{
@@ -210,6 +221,10 @@ ul{
     text-align: center;
     font-size: 30px;
     margin-bottom: 20px;
+
+}
+.social a{
+    color: black;
 
 }
 

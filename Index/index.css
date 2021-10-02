@@ -28,9 +28,9 @@ ul{
 }
 
 .containerr {
-    width: 90%;
-    margin-left: 5%;
-    background: rgb(255, 255, 255);
+    width: 95%;
+    margin-left: 2.5%;
+    /* background: rgb(255, 255, 255); */
     /* background: rgba(0, 0, 0, 0.4); */
 }
 
@@ -49,12 +49,16 @@ ul{
     margin: 10px 10px;
 }
 .Icons a{
-    margin: 0 5px;
+    margin: 0 10px;
     color: black;
+}
+.Icons i{
+    font-size: 25px;
 }
 
 /* Barra de Navegacion */
 .nav-main {
+    height: auto;
     font-size: 17px;
     display: grid;
 
@@ -68,7 +72,7 @@ ul{
     align-content: flex-start;
     
     background: black;
-    border-bottom: 1px solid rgb(12, 206, 220);
+    /* border-bottom: 1px solid rgb(12, 206, 220); */
 
 }
 
@@ -97,7 +101,7 @@ ul{
     color: white;
     padding: 6px;
     text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 120%;
     font-style: normal;
@@ -106,26 +110,41 @@ ul{
 .Armar_Skate{
     background:rgb(120,221,226);
     text-align: center;
-}
-.Armar_Skate img{
     height: 400px;
-    
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+
+}
+.Armar_Skate h3{
+    margin: 0px;
+    padding: 15px;
+}
+.gif{
+    height: 250px;
+}
+.Armar_Skate .Carrusel img{
+    height: 400px;
 }
 /* Carrusel */
 .carousel{
-    width: 50%;
+    min-height: 500px;
+    background: white;
 }
-.Carrusel_Skate{
-    text-align: center;
-
-    display: flex;
-    justify-content:center;
-    align-items: center;
+.carousel h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
-
-.carousel-inner img{
-    height: 600px;
-    /* width: 100%; */
+.carousel .carousel-item{
+    margin: 0;
+    padding: 0;
+    width: 350px;
+}
+.carousel .carousel-item img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .btn{
@@ -154,11 +173,24 @@ ul{
 
 /* Tarjetas */
 .news-cards{
+    opacity: 90%;
+    background:none;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-    margin: 10px 0px;
+    /* gap: 25px; */
     text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.card{
+    margin: 0px;
+    padding: 0px;
+    background: none;
+    margin: 0px;
+    background: white;
+    /* border: 1px solid black; */
+    /* border-radius: 0px 0px 10px 10px; */
 }
 
 .news-cards img{
@@ -166,38 +198,22 @@ ul{
     height: 150px;
 }
 
-.news-cards h3{
-    font-size: 20px;
-    margin: 10px 0px;
-}
-
-.news-cards a{
-    padding: 10px 0px;
-    color: rgb(0, 0, 0);
-    text-transform: none;
-    text-decoration: none;
-    font-weight: bold;
+.card-title{
+    color: black;
 }
 
 /* card banner one */
 .card-full{
-
+    opacity: 90%;
     background: rgb(0, 0, 0);
-
+    height: 350px;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 300px;
-    /* background: url(./img/Seguinos\ en\ Instagram.jpg) no-repeat center/cover; */
-    
+    grid-template-columns: 50% 50%;
 }
 
-.Img1{
-    background: url(../assets/img/Instagram.jpg) no-repeat center/cover;
-
-}
-.Img2{
-    background: url(../assets/img/Facebook.jpg) no-repeat center/cover;
-
+.card-full img{
+    width: 100%;
+    height: 350px;
 }
 
 /* Social */
@@ -210,6 +226,10 @@ ul{
     text-align: center;
     font-size: 30px;
     margin-bottom: 20px;
+
+}
+.social a{
+    color: black;
 
 }
 

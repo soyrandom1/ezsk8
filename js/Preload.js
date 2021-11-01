@@ -34,6 +34,8 @@ class PreloadScene extends Phaser.Scene {
             this.load.image('backgroundLija', './assets/backgroundLija.png')
             this.load.image('maskLija', './assets/maskLija.png')
             this.load.image('lija', './assets/lija.png')
+            this.load.image('cruiserGrip', './assets/cruiserGrip.png')
+            this.load.image('cruiserMask', './assets/cruiserMask.png')
 
             //example
             //this.load.multiatlas('player_animations', './assets/atlas/playerAnim.json', 'assets')
@@ -54,6 +56,8 @@ class PreloadScene extends Phaser.Scene {
     create() {
         console.log('preload')
         this.scene.start('BoardView')
+      
+        
             //this.scene.remove('Preload')
     }
 }

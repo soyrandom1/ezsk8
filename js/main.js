@@ -14,11 +14,11 @@ var gHeigth
 
 var config = {
     type: Phaser.AUTO,
-    parent: 'phaser-example',
+    parent: 'phaser-game',
     autoCenter: Phaser.Scale.CENTER,
     width: 550,
     height: 400,
-    scene: [PreloadScene, BoardView]
+    scene: [PreloadScene, BoardView, GripView]
 }
 
 var game = new Phaser.Game(config)

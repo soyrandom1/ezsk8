@@ -9,13 +9,10 @@
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!--full screen helper-->
-	<script type="text/javascript" src="js/fullScreen.js"></script>
+
 	<!--use this file to store your game globals!-->
 	<script type="text/javascript" src="js/globals.js"></script>
 
-	<script type="text/javascript" src="js/phaser.js"></script>
-
-	<script type="text/javascript" src="js/utils.js"></script>
 
 </head>
 <body>
@@ -45,10 +42,6 @@
     <!-- <div class="menu-btn">
         <i class="fas fa-bars"></i>
     </div> -->
-    	<!--I recomend loading all your games js here-->
-	<script type="text/javascript" src="js/Preload.js"></script>
-	<script type="text/javascript" src="js/BoardView.js"></script>
-	<script type="text/javascript" src="js/GripView.js"></script>
 
     <div class="containerr">
 
@@ -74,8 +67,7 @@
             <img src="./assets/img/Logo.png" alt="Noticias" class="Logo">
             
             <!-- Menu de Titulos -->
-           <!-- Menu de Titulos -->
-            <ul class="nav-menu">
+           <ul class="nav-menu">
 
                 <li>
                     <a href="./Index/index.html">Home</a>
@@ -101,29 +93,51 @@
 
         </nav>
 	<!--Also, i usually leave the main script at the end, to avoid loading issues-->
-	<script src="js/main.js"></script>
-
 	<!--Game container-->
 	<div class="stepsContainer">
-		<br>
-		<h5 class="center">Acomode la imagen a su gusto</h5>
-		<br>
-	<div id="phaser-game"></div>
-	<br>
-	<br>
-	<br>
-
-
-	<div class="center">
-		<button class="button-59" onclick="nextStep();">CONTINUAR</button>
-		</div>
-	<br>
-	<br>
-	<br>
-
+        <br>
+        <div style="text-align: center;">
+        <h3>Checkout:</h3><br>
+        <h5 >Tabla: </h5>
+        <h5 id="tablah5">Modelo: </h5>
+        <h5 id="brand">Marca: </h5>
+        <h5 id="price">Precio con diseño: </h5>
+        <br>
+        <h5>Lija:</h5>
+        <h5>Marca: Blank</h5>
+        <h5>Precio con diseño: $2500</h5>
+        <br>
+        <h5 id="total">Total: </h5>
+        <br>
+        <br>
+        </div>
+        <center>
+        <a href="./Index"><button class="button-59" id="submit">CONTINUAR</button></a>
+        </center>
+        <br>
+         <br>
+          <br>
+             <br>
+          <br>
 	</div>
 <br>
-
+    <script type="text/javascript">
+        console.log(boardSelected)
+       var t1 = document.getElementById("tablah5")
+       var tta = document.createTextNode(localStorage.getItem('board'))
+       t1.appendChild(tta)
+       if(localStorage.getItem('board') == 'pop')
+       {
+        document.getElementById("brand").appendChild(document.createTextNode('Woodoo'))
+        document.getElementById("price").appendChild(document.createTextNode('$9600'))
+        document.getElementById("total").appendChild(document.createTextNode('$12100'))
+       }else
+       {
+            document.getElementById("brand").appendChild(document.createTextNode('Kalima'))
+            document.getElementById("price").appendChild(document.createTextNode('$10600'))
+            document.getElementById("total").appendChild(document.createTextNode('$13100'))
+       }
+    </script>
     </div>
     <!-- Social -->
     <section class="social">
@@ -148,23 +162,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- Scroll Reveal (Efecto en la pagina) -->
     <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- Js -->
-    <script src="./main.js"></script>
-        <script type="text/javascript">
 
-        function nextStep()
-        {
-            if(!lj)
-            {
-            scn.scene.switch('GripView')
-            lj= true
-        }else
-        {
-            window.location = 'checkOut.html'
-        }
-
-        }
-    </script>
 </body>
 </html>
 

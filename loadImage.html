@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1>BOARD IMAGE LOADER</h1> <br>
+	<input type="file" id="boardImageInput" name=""><br>
+		<h1>GRIPTAPE IMAGE LOADER</h1> <br>
+	<input type="file" id="griptapeImageInput" name="">
+	<br>
+	<form action="builder.html">
+	<button id="submit" >SUBMIT</button>
+	</form>
+	<script type="text/javascript">
+		document.querySelector('#boardImageInput').addEventListener("change", function(){
+			const reader = new FileReader()
+			reader.addEventListener("load", ()=>{
+				localStorage.setItem("board-image", reader.result)
+			})
+			reader.readAsDataURL(this.files[0])
+		})
+		document.querySelector('#griptapeImageInput').addEventListener("change", function(){
+			const reader = new FileReader()
+			reader.addEventListener("load", ()=>{
+				localStorage.setItem("griptape-image", reader.result)
+			})
+			reader.readAsDataURL(this.files[0])
+		})
+
+	</script>
+</body>
+</html>
